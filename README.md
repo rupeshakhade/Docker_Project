@@ -1,18 +1,18 @@
 Project on Building and Deploying a Docker Image for a React-Django Web App on Ubuntu.
 
-Step 1: Connect to an EC2 instance.
+**Step 1: Connect to an EC2 instance.**
 Connect to your ec2 instance using it's pem file & public DNS
 
 ---->>ssh -i "< pem file > ubuntu@ < public DNS >
 
 ![Screenshot (541)-1](https://user-images.githubusercontent.com/20862722/233547308-75cd2eb1-6b9c-4aa9-be1d-14474a6d1135.jpg)
 
-Step 2: Update the package.
+#**Step 2: Update the package.**
 Update the package manager by using below command
 
 ----->> sudo apt-get update
 
-Step 3: install docker
+#**Step 3: install docker**
 Install docker using the below command
 
 ----->> sudo apt-get install docker.io
@@ -27,7 +27,7 @@ To verify the Docker Version and Docker status use below commands
 
 ----->> docker --version.
 
-Step 4: Create directory.
+#**Step 4: Create directory.**
 We will create one directory and clone the code from github
 
 ----->> mkdir projects
@@ -36,14 +36,14 @@ Enter the projects folder
 
 ----->> cd projects/
 
-Step 5: Clone the repository from Github.
+#**Step 5: Clone the repository from Github.**
 In this step, we clone the code for the Django-React demo app from Github using the “git clone” command. The code will be downloaded and stored in a directory.
 
 -----> git clone https://github.com/rupeshakhade/react_django_demo_app.git
 
 ![Screenshot (542)](https://user-images.githubusercontent.com/20862722/233547461-1389f22d-15d0-46d9-ad6f-3035218ebe48.jpg)
 
-Step 6: Check the files and understand the requirements.
+#**Step 6: Check the files and understand the requirements.**
 After cloning the code, we can check the files in the directory and understand the requirements needed to run the code. The “ls” command can be used to check the files, and we can refer to the README file and manage.py file to understand the code and its dependencies.
 
 · After doing the clone, a directory will be created with a name called react_django_demo_app
@@ -64,7 +64,7 @@ Manage.py file — Generally this is the file that contains the main things and 
 
 Requirements.txt file — This is file we will get to know all requirements we need to run this code. Here in this project, we need Django also to run it.
 
-Step 7: Create a Dockerfile.
+#**Step 7: Create a Dockerfile.**
 A Dockerfile is a text file that includes the necessary commands for building a Docker image. In this step, we create a Dockerfile using the “vim Dockerfile” command,
 
 ----->>vim Dockerfile
@@ -83,7 +83,7 @@ EXPOSE: This command informs Docker that the container listens on the specified 
 
 CMD: This command specifies the command that will be run when a container is created from the image.
 
-Step 8: Build a docker image.
+#**Step 8: Build a docker image.**
 After creating the Dockerfile, we can build the Docker image using the “docker build” command. This command builds an image from the Dockerfile and tags it with a name and version.
 
 Docker image — They are executable packages, bundled with application code & dependencies, software packages, etc. for the purpose of creating containers. Docker images can be deployed to any docker environment and the container can be spun up there to run the application.
@@ -96,7 +96,7 @@ After building the Docker image, we can check the images using the “docker ima
 
 ![Screenshot (550)](https://user-images.githubusercontent.com/20862722/233547793-ae3139bf-e618-4dc0-bb85-71565497b51a.jpg)
 
-Step 9: Create a Docker container.
+#**Step 9: Create a Docker container.**
 Once we have built the Docker image, we can create a Docker container using the “docker run” command. This command creates a container from the image and maps the container’s port to the host’s port.
 
 Docker container — Container hold the entire package that is needed to run a application, libraries and system dependencies.
@@ -114,7 +114,7 @@ Now using above images we will create a container by using command
 We can check the list of Docker containers using the “docker ps” command. This command lists all the running Docker containers.
 ![Screenshot (551)](https://user-images.githubusercontent.com/20862722/233548065-14cfaf12-2d3d-4c81-9bb9-c74065bf9f75.jpg)
 
-Step 10: Port opening
+#**Step 10: Port opening**
 Open port 8001 in the instance's security inbound rule Check if the application is running.
 
 Before checking the application on a web browser, we need to open port 8001 in the instance’s security inbound rule to allow traffic to flow to the container.
