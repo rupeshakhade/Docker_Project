@@ -1,4 +1,4 @@
-Project on Building and Deploying a Docker Image for a React-Django Web App on Ubantu.
+Project on Building and Deploying a Docker Image for a React-Django Web App on Ubuntu.
 
 Step 1: Connect to an EC2 instance.
 Connect to your ec2 instance using it's pem file & public DNS
