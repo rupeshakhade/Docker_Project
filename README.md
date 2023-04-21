@@ -129,7 +129,7 @@ Open port 8001 in the instance's security inbound rule Check if the application 
 
 Before checking the application on a web browser, we need to open port 8001 in the instance’s security inbound rule to allow traffic to flow to the container.
 
-Step 11: Check if the application is running
+#**Step11: Check if the application is running**
 
 Finally, we can copy the public IP of the instance to the web browser and check if the application is running. If everything has been set up correctly, the Django-React demo app should be up and running.
 ![Screenshot (552)](https://user-images.githubusercontent.com/20862722/233548633-232095f9-075f-4d4c-85b0-148639e8064a.jpg)
