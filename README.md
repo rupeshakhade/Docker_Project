@@ -110,6 +110,7 @@ Now using above images we will create a container by using command
 
 ![Screenshot (550)](https://user-images.githubusercontent.com/20862722/233547925-7dbe00e2-f3ef-46a3-81c9-b13f2ef260af.jpg)
 
+
 We can check the list of Docker containers using the “docker ps” command. This command lists all the running Docker containers.
 ![Screenshot (551)](https://user-images.githubusercontent.com/20862722/233548065-14cfaf12-2d3d-4c81-9bb9-c74065bf9f75.jpg)
 
