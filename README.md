@@ -125,9 +125,11 @@ We can check the list of Docker containers using the “docker ps” command. Th
 
 #**Step 10: Port opening**
 
+
 Open port 8001 in the instance's security inbound rule Check if the application is running.
 
 Before checking the application on a web browser, we need to open port 8001 in the instance’s security inbound rule to allow traffic to flow to the container.
+
 
 #**Step11: Check if the application is running**
 
